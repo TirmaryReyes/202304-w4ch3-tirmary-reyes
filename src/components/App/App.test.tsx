@@ -1,4 +1,4 @@
-import { render, screen} from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import App from "./App";
 
 describe("Given an App component", () => {
@@ -7,10 +7,10 @@ describe("Given an App component", () => {
       const expectedText = /hello world!/i;
 
       render(<App />);
-  
+
       const text = screen.getByText(expectedText);
-      
+
       expect(text).toBeInTheDocument();
-    })
-  })
-})
+    });
+  });
+});
