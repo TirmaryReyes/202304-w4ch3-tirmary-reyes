@@ -1,5 +1,8 @@
+import Info from "../Info/Info";
+
 const App = (): JSX.Element => {
-  return <p>Hello world!</p>;
+  const isCalling = true;
+  return <Info isCalling={isCalling} text={""} />;
 };
 
 export default App;

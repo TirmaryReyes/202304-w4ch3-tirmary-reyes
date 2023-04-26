@@ -3,8 +3,8 @@ import App from "./App";
 
 describe("Given an App component", () => {
   describe("When rendered", () => {
-    test("Then it should show the text 'Hello world!", () => {
-      const expectedText = /hello world!/i;
+    test("Then it should show the text 'Calling...", () => {
+      const expectedText = /Calling.../i;
 
       render(<App />);
 
