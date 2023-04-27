@@ -6,7 +6,7 @@ describe("Given an Info component", () => {
     test("Then it should display 'Calling...'", () => {
       const isCalling = false;
 
-      render(<Info isCalling={isCalling} text={""} />);
+      render(<Info isCalling={isCalling} />);
       const info = screen.getByText("Calling...");
 
       expect(info).toBeInTheDocument();
